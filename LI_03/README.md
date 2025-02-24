@@ -11,7 +11,7 @@
 ## Инструкция по запуску проекта
 
 1. Склонируйте репозиторий с GitHub:
-   https://github.com/ofdoamne/JS/tree/main/LI_02
+   https://github.com/ofdoamne/JS/tree/main/LI_03
 
 2. Перейдите в папку проекта
 
