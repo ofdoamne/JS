@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица транзакций</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+      <form id="transactionForm">
+            <input type="number" id="amount" placeholder="Сумма" required>
+            <input type="text" id="description" placeholder="Описание" required>
+            <button id="addTransactionBtn" type="button">Добавить</button>
+        </form>
+    <h2>Транзакции</h2>
+    <table id="transactionTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Дата и Время</th>
+                <th>Категория</th>
+                <th>Описание</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="tebleBody">
+            <!-- Здесь будут добавляться транзакции -->
+        </tbody>
+    </table>
+    <br>
+    <table style="width: 15%;">
+        <thead>
+            <tr>
+                <th>Общая сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="totalSum">0</th>
+            </tr>
+        </tbody>
+    </table>
+    <script src="src/index.js"></script>
+</body>
+</html>
